@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Rout-training/static/css/main.7acaea2f.css",
+    "main.js": "/React-Rout-training/static/js/main.675b484f.js",
+    "index.html": "/React-Rout-training/index.html",
+    "main.7acaea2f.css.map": "/React-Rout-training/static/css/main.7acaea2f.css.map",
+    "main.675b484f.js.map": "/React-Rout-training/static/js/main.675b484f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.675b484f.js"
+  ]
+}
