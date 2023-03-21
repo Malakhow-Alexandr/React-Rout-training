@@ -1,8 +1,12 @@
-const Products = () => {
+import { ProductList } from "components/ProductList/ProductList";
+import { getProducts } from "fakeAPI";
+
+export const Products = () => {
+  const products = getProducts();
   return (
-    <div>
-      <h2>Products</h2>
-    </div>
+    <main>
+      <ProductList products={products} />
+    </main>
   );
 };
 
