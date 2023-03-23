@@ -1,21 +1,23 @@
+import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from 'pages/Home';
-import About from 'pages/About';
-import Products from 'pages/Products';
-import NotFound from 'pages/NotFound';
-import ProductDetails from 'pages/ProductDetails';
-import { Team } from './Team/Team';
-import { Reviews } from './Reviews/Reviews';
-import { Mission } from './Mission/Mission';
 import { SharedLayout } from './SharedLayout/SharedLayout';
+
+
+
+const Home = lazy(()=> import("../pages/Home"));
+const About = lazy(() => import("../pages/About"));
+const Products = lazy(() => import("../pages/Products"));
+const NotFound = lazy(() => import("../pages/NotFound"));
+const ProductDetails = lazy(() => import("../pages/ProductDetails"));
+const Team = lazy(() => import("./Team/Team"));
+const Reviews = lazy(() => import("./Reviews/Reviews"));
+const Mission = lazy(() => import("./Mission/Mission"));
 
 
 export const App = () => {
   return (
-  
-    
-      <Routes>
-        <Route path="/" element={<SharedLayout/>}>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />}>
           <Route path="mission" element={<Mission />} />
@@ -25,9 +27,7 @@ export const App = () => {
         <Route path="products" element={<Products />} />
         <Route path="products/:id" element={<ProductDetails />} />
         <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-     
-      
+      </Route>
+    </Routes>
   );
 };
