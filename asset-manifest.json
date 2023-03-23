@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-Rout-training/static/css/main.93f80f61.css",
-    "main.js": "/React-Rout-training/static/js/main.52827be8.js",
+    "main.js": "/React-Rout-training/static/js/main.0e76e13a.js",
     "index.html": "/React-Rout-training/index.html",
     "main.93f80f61.css.map": "/React-Rout-training/static/css/main.93f80f61.css.map",
-    "main.52827be8.js.map": "/React-Rout-training/static/js/main.52827be8.js.map"
+    "main.0e76e13a.js.map": "/React-Rout-training/static/js/main.0e76e13a.js.map"
   },
   "entrypoints": [
     "static/css/main.93f80f61.css",
-    "static/js/main.52827be8.js"
+    "static/js/main.0e76e13a.js"
   ]
 }
